@@ -1,0 +1,378 @@
+* {
+    margin: 0px;
+    cursor: pointer;
+}
+
+/* NAVICATION */
+#navication {
+    width: 100%;
+    height: 30px;
+    background-color: #0A4191;
+    position: fixed;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+}
+
+li {
+    padding-top: 5px;
+    letter-spacing: 0.5px;
+    margin-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ffc86f;
+    font-weight: 550;
+    font-size: small;
+}
+
+a:hover {
+    color: white;
+}
+
+.login {
+    color: white;
+}
+
+/* HEAD */
+#head {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    top: 30px;
+}
+
+#logo {
+    width: 100px;
+    height: 80px;
+    background-color: white;
+    background-image: url('logo.png');
+    background-size: 70px 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+#brandname {
+    width: 250px;
+    height: 80px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    text-align: center;
+}
+
+#name {
+    color: #0A4191;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 900;
+    margin-top: 8px;
+}
+
+#autonomous {
+    color: #0A4191;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: smaller;
+    margin-top: -3px;
+}
+
+#location {
+    color: #0A4191;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: smaller;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+#code {
+    color: orange;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+#images {
+    width: 100px;
+    height: 80px;
+    /* background-color: yellow; */
+    display: inline-block;
+    position: absolute;
+    /* left: 70%; */
+
+}
+
+#extra {
+    width: 35px;
+    height: 35px;
+    /* background-color: aquamarine; */
+    display: inline-block;
+    margin-left: 25%;
+    background-image: url('ex.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: center;
+}
+
+#naac {
+    width: 35px;
+    height: 35px;
+    /* background-color: red; */
+    display: inline-block;
+    background-image: url('naac.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: center;
+}
+
+#num25 {
+    width: 75px;
+    height: 38px;
+    /* background-color: green; */
+    margin-left: 25%;
+    background-image: url('num25.jpg');
+    background-repeat: no-repeat;
+    background-size: 75px 38px;
+    background-position: center;
+}
+
+/* NOTIFICATION */
+#notification {
+    width: 100%;
+    height: 30px;
+    background-color: #0A4191;
+    position: fixed;
+    top: 110px;
+    overflow: hidden;
+    font-size: small;
+}
+
+.ncontent {
+    width: 100%;
+    height: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    font-weight: 550;
+    line-height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    animation-name: move;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* CONTENTBOX */
+#cb1 {
+    height: auto;
+    width: 100%;
+    /* background: linear-gradient(to right,#0A4191,#fdb644); */
+    position: absolute;
+    top: 140px;
+    z-index: -1;
+}
+
+/* STUDENT LOGIN */
+#sl {
+    margin-top: 30px;
+    color: #0A4191;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#stlogin {
+    width: 50%;
+    height: auto;
+    background-color: #0A4191;
+    margin-left: 25%;
+    margin-top: 20px;
+    border-style: solid;
+    border-radius: 40px 5px;
+    border-color: #0A4191;
+    border-width: 0.01px;
+    box-shadow: 10px 10px 2px #fdb644;
+}
+
+#stinside {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+}
+
+#rnd,
+#pwd,
+#dobd {
+    text-align: center;
+    /* background-color: green; */
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+#rnind,
+#pwind,
+#dobind {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#rni,
+#pwi,
+#dobi {
+    border-radius: 10px;
+    border-color: white;
+
+}
+
+#pwd,
+#dobd {
+    margin-top: 20px;
+}
+
+#bd {
+    /* background-color: yellow; */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#button {
+    border-radius: 10px;
+    border-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+#out{
+    /* background-color: yellow; */
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0A4191;
+}
+pre,#ot,#pl{
+    display: inline;
+}
+#pl{
+    color: #ff9e02;
+}
+#pl,#ot{
+    font-size: large;
+}
+#ot{
+    font-weight: 600;
+}
+
+#bottom{
+    width: 100%;
+    height: 30px;
+    background-color: #0A4191;
+    margin-top: 29px;
+}
+
+@media screen and (min-width:700px) and (max-width:1000px) {
+
+    /* HEAD */
+    #brandname {
+        width: 250px;
+    }
+
+    #logo {
+        margin-left: 2%;
+    }
+
+    #images {
+        width: 320px;
+        /* left: 450px; */
+    }
+
+    #extra {
+        width: 80px;
+        height: 80px;
+        margin-left: 0px;
+        background-size: 80px;
+    }
+
+    #naac {
+        width: 80px;
+        height: 80px;
+        margin-left: 0px;
+        background-size: 80px;
+
+    }
+
+    #num25 {
+        display: inline-block;
+        margin-left: 0px;
+        width: 150px;
+        height: 80px;
+        background-size: 150px 75px;
+
+    }
+
+}
+
+@media screen and (min-width:1000px) and (max-width:1366px) {
+
+    /* HEAD */
+    #logo {
+        margin-left: 20%;
+    }
+
+    #images {
+        width: 320px;
+    }
+
+    #extra {
+        width: 80px;
+        height: 80px;
+        margin-left: 0px;
+        background-size: 80px;
+
+    }
+
+    #naac {
+        width: 80px;
+        height: 80px;
+        margin-left: 0px;
+        background-size: 80px;
+    }
+
+    #num25 {
+        display: inline-block;
+        margin-left: 0px;
+        width: 150px;
+        height: 80px;
+        background-size: 150px 75px;
+
+    }
+    #stlogin{
+        width: 34%;
+        margin-left: 33%;
+    }
+
+}
